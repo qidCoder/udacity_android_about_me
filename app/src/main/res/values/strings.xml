@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Shelley Ophir</string>
+    <string name="yellow_star">Yellow star</string>
+    <string name="bio">
+        Hi, my name is Shelley and I love developing mobile apps!
+        \n\n I changed careers from Mechanical Engineering to Software Engineering.
+        \n\n I love crafting such as sewing, watercolor and crochet.
+        \n\n I love ice skating (both figure skating and hockey), kayaking and running.
+        \n\n I really want to learn to sail one day especially on the Charles River and maybe even with MIT!
+        \n\n I can\'t wait to publish my first app
+        \n\n I also love attending conventions and networking events.
+    </string>
+    <string name="nickname_hint">What is your nickname?</string>
+    <string name="done">Done</string>
+</resources>
