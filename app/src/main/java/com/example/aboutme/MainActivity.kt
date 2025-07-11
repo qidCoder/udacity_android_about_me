@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
     //create databinding object
     private lateinit var binding: ActivityMainBinding
 
+    private val myName: MyName = MyName("Shelley Ophir")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -20,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         //replace setContentView with binging
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        binding.myName = myName
 //        findViewById<Button>(R.id.done_button)
 //            .setOnClickListener {
 //                addNickname(it)
@@ -33,7 +36,8 @@ class MainActivity : AppCompatActivity() {
     //function to handle the done button on the click listener
     private fun addNickname(view: View) {
         binding.apply {
-            nicknameText.text = binding.nicknameEdit.text
+//            nicknameText.text = binding.nicknameEdit.text
+            myName?.nickName = nicknameEdit.text.toString()
             invalidateAll() //have to add this to refresh the UI with new data
             doneButton.visibility = View.GONE
             nicknameEdit.visibility = View.GONE
